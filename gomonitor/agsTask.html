@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>seqyuan</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://seqyuan.github.io/gomonitor/agsTask.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://seqyuan.github.io/gomonitor/agsTask">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://seqyuan.github.io/zh-cn/gomonitor/agsTask">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  
+<link rel="stylesheet" href="/css/navy.css">
+
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-lato@0.0.75/index.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="seqyuan" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="功能gomonitor agsTask &lt;arguments&gt; 投递的项目有以下feature  agsTask的主要功能是把一个project内的所有任务整体作为一个workflow通过argo软件投递到kubernetes 执行投递命令会返回一个argoID，通过ags get argoID能够获得项目workflow的状态信息  通过此模式投递的project能够通过gomoni">
+<meta property="og:type" content="website">
+<meta property="og:title" content="seqyuan">
+<meta property="og:url" content="https://seqyuan.github.io/gomonitor/agsTask">
+<meta property="og:site_name" content="seqyuan">
+<meta property="og:description" content="功能gomonitor agsTask &lt;arguments&gt; 投递的项目有以下feature  agsTask的主要功能是把一个project内的所有任务整体作为一个workflow通过argo软件投递到kubernetes 执行投递命令会返回一个argoID，通过ags get argoID能够获得项目workflow的状态信息  通过此模式投递的project能够通过gomoni">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-11T07:25:35.014Z">
+<meta property="article:modified_time" content="2021-03-11T07:25:35.013Z">
+<meta property="article:author" content="ahworld">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6482217598104186",
+          enable_page_level_ads: true
+     });
+  </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/gomonitor/" class="main-nav-link">gomonitor</a><a href="/trackC/" class="main-nav-link">trackC</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/about/" class="main-nav-link">About</a>
+      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/seqyuan/site" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="gomonitor/agsTask.html">
+        
+          <option value="en" selected>English</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/hexojs/site/edit/master/source/gomonitor/agsTask.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="功能" class="article-heading"><a href="#功能" class="headerlink" title="功能"></a>功能<a class="article-anchor" href="#功能" aria-hidden="true"></a></h1><p><code>gomonitor agsTask &lt;arguments&gt;</code> 投递的项目有以下feature</p>
+<ul>
+<li>agsTask的主要功能是把一个project内的所有任务整体作为一个workflow通过argo软件投递到kubernetes</li>
+<li>执行投递命令会返回一个argoID，通过<code>ags get argoID</code>能够获得项目workflow的状态信息</li>
+<li> 通过此模式投递的project能够通过<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitlab.com/seqyuan/gomonitor/wikis/stat" title="stat"><code>gomonitor stat</code></a>命令查询项目的状态，获得项目所在gomonitor数据库的Id号</li>
+<li> 通过此模式投递的project能够通过<code>gomonitor stat -p Id</code>命令查询特定项目的详细状态，主要包括 project内各模块的依赖关系、project内各模块的运行状态、项目workflow的argoID、项目的起始时间、结束时间以及项目信息的sqlite3数据库</li>
+</ul>
+<h1 id="Arguments" class="article-heading"><a href="#Arguments" class="headerlink" title="Arguments"></a>Arguments<a class="article-anchor" href="#Arguments" aria-hidden="true"></a></h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Arguments:</span><br><span class="line"></span><br><span class="line">  -i  --main_ini_depend  main dependence file</span><br><span class="line">  -p  --project_name     Project name. Default: workflow</span><br><span class="line">  -t  --project_type     project type. Default: None</span><br><span class="line">  -b  --Project_batch    project type. Default: None</span><br><span class="line">  -l  --last_module      Last run module name. Default: --</span><br><span class="line">  -e  --env              Calculation queue. Default: idc_physical</span><br><span class="line">  -f  --finish_mark      Using the strings specified by -s option at the end of files</span><br><span class="line">		           0  .e files</span><br><span class="line">		           1  Using .sign files.</span><br><span class="line">		           2  Do not check.</span><br><span class="line">		           3  Using the strings specified by -s option at the end of .o files.</span><br><span class="line">                           Default: 1</span><br><span class="line">  -s  --finish_str       Finish string for -f option. Default:</span><br><span class="line">                         Still_waters_run_deep</span><br><span class="line">  -m  --addmode          Operation mode for resubmitting the same project</span><br><span class="line">		           0  Resubmit those did not successfully finished, and jobs depend on them.</span><br><span class="line">		           1  Resubmit scripts that were added or modified after execution, and jobs depend on them.</span><br><span class="line">		           2  Resubmit all jobs. No matter successful or not.. Default: 0</span><br><span class="line">  -h  --help             Print help information</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="Arguments，gomonitor-agsTask各参数说明" class="article-heading"><a href="#Arguments，gomonitor-agsTask各参数说明" class="headerlink" title="Arguments，gomonitor agsTask各参数说明"></a>Arguments，gomonitor agsTask各参数说明<a class="article-anchor" href="#Arguments，gomonitor-agsTask各参数说明" aria-hidden="true"></a></h1><h2 id="i" class="article-heading"><a href="#i" class="headerlink" title="-i"></a><code>-i</code><a class="article-anchor" href="#i" aria-hidden="true"></a></h2><p>A text file，<code>-i</code>参数是一个两列的文本文件，<code>tab</code>隔开，用于描述project中各任务之间的运行逻辑</p>
+<p>第一列为第二列运行的前提条件，第二列可以为空。</p>
+<p>此文件可由最新k8s版的generate_pipeline产生，也可自己写脚本生成，参考Hi-C流程中模块主脚本的写法。<code>-i</code>参数的文件示例如下：</p>
+<table>
+<thead>
+<tr>
+<th>/abspath/shell/1-0-cut-raw.ini</th>
+<th>/abspath/shell/2-0-filter.ini</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/abspath/shell/2-0-filter.ini</td>
+<td>/abspath/shell/3-0-stat-dup-poly.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/2-0-filter.ini</td>
+<td>/abspath/shell/3-1-nt-blastn.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/3-1-nt-blastn.ini</td>
+<td>/abspath/shell/3-2-nt-stat.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/2-0-filter.ini</td>
+<td>/abspath/shell/3-2-nt-stat.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/3-0-stat-dup-poly.ini</td>
+<td>/abspath/shell/4-0-stat.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/4-0-stat.ini</td>
+<td>/abspath/shell/5-0-md5.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/5-0-md5.ini</td>
+<td>/abspath/shell/6-0-feedback.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/3-2-nt-stat.ini</td>
+<td>/abspath/shell/6-1-nt-feedback.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/6-0-feedback.ini</td>
+<td>/abspath/shell/6-1-nt-feedback.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/5-0-md5.ini</td>
+<td>/abspath/shell/6-1-nt-feedback.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/3-2-nt-stat.ini</td>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/3-0-stat-dup-poly.ini</td>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/6-0-feedback.ini</td>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+<td>/abspath/shell/8-0-md5-all.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+<td>/abspath/shell/8-1-html2pdf.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/8-1-html2pdf.ini</td>
+<td>/abspath/shell/8-2-send-report.ini</td>
+</tr>
+<tr>
+<td>/abspath/shell/7-0-filter-result.ini</td>
+<td>/abspath/shell/8-2-send-report.ini</td>
+</tr>
+</tbody></table>
+<p><code>-i</code>两列均为要执行任务的配置文件，采用标准的ini格式，格式示例如下所示：</p>
+<h3 id="pod-config-example" class="article-heading"><a href="#pod-config-example" class="headerlink" title="pod config example"></a><strong><code>pod config example</code></strong><a class="article-anchor" href="#pod-config-example" aria-hidden="true"></a></h3><blockquote>
+<p>1-0-cut-raw.ini </p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[templetes]</span><br><span class="line">pod_name = 1-0-cut-raw</span><br><span class="line">module = cut-raw</span><br><span class="line">template = cut-raw</span><br><span class="line">imagePullSecrets = registry-read-only-key-bj</span><br><span class="line"></span><br><span class="line">[requests]</span><br><span class="line">memory = 5</span><br><span class="line">cpu = 6</span><br><span class="line"></span><br><span class="line">[limits]</span><br><span class="line">memory = 7.5</span><br><span class="line">cpu = 6</span><br><span class="line"></span><br><span class="line">[container]</span><br><span class="line">image = registry-vpc.cn-beijing.aliyuncs.com/annoroad/centos-python_perl_r:v0.1</span><br><span class="line">command = [sh ,-c]</span><br><span class="line">args = /home/zanyuan/bin/example/agsTask_test3/shell/shell//1-0-cut-raw/1-0-cut-raw.sh</span><br><span class="line">lines = 4</span><br><span class="line"></span><br><span class="line">[volumeMounts]</span><br><span class="line">sge = /data1|x400.bjannoroad.local|/annoroad/data1</span><br><span class="line">workdir = /cloud|x400.bjannoroad.local|/annoroad/cloud</span><br><span class="line">home = /cloud_home|x400.bjannoroad.local|/home</span><br><span class="line"></span><br><span class="line">[NodeSelector]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>单个任务的配置文件格式说明</code>，同样适用于<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitlab.com/seqyuan/gomonitor/wikis/submit" title="submit"><code>gomonitor submit</code></a>命令</p>
+</blockquote>
+<ul>
+<li><input disabled type="checkbox"> <strong>templetes</strong> <ol>
+<li>pod_name: job的名称，请保持其在<code>-i</code>中的唯一性</li>
+<li>module: job所在的模块名称，一个模块可能包含多个job</li>
+<li>template: 为了减少投递到argo时配置文件的大小，设置此项，例如比对步骤不同样品采用相同的template名称</li>
+<li>imagePullSecrets: docker镜像仓库的key，找镜像仓库管理员获得，注意义乌与北京仓库此项应为不同值</li>
+</ol>
+</li>
+<li><input disabled type="checkbox"> <strong>requests</strong> <ol>
+<li>memory: job需要的内存大小</li>
+<li>cpu: job需要的cpu大小</li>
+</ol>
+</li>
+<li><input disabled type="checkbox"> <strong>limits</strong> <ol>
+<li>memory: job需要的内存限制，超出此限制会被k8s系统删除</li>
+<li>cpu: job需要的cpu限制，超出此限制会被k8s系统删除</li>
+</ol>
+</li>
+<li><input disabled type="checkbox"> <strong>container</strong> <ol>
+<li>image: job启动容器需要的的镜像地址</li>
+<li>command: 此项为固定设置值[sh ,-c]</li>
+<li>args: 此项可以是1个脚本的绝对路径，表示此job要执行的脚本</li>
+<li>lines: 此项为数字整型，此项可设置为空，表示<code>args</code>设置的脚本整体按内容的顺序执行；设置其他非0整型N，则<strong>args</strong>设置的脚本会按照每N行1个单位，并行的去执行其中内容，详见<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitlab.com/seqyuan/gomonitor/wikis/submit" title="submit"><code>gomonitor submit</code></a>中的example</li>
+</ol>
+</li>
+<li><input disabled type="checkbox"> <strong>volumeMounts</strong>，此项表示执行此job要挂载的路径，此section内的key与value不固定，可以有多个key value，表示挂载多个目录。key: This must match the Name of a Volume，value用两个”|”分割成3项<ol>
+<li>value的第1项：Volume’s name, Must be a DNS_LABEL</li>
+<li>value的第2项：Server, server is the hostname or IP address of the NFS server</li>
+<li>value的第3项：Path, path that is exported by the NFS server.</li>
+</ol>
+</li>
+<li><input disabled type="checkbox"> <strong>NodeSelector</strong>，此项表示job投递需要的计算资源label信息，可以设置为空，或者多个键值对，推荐设置1个键值对或者为空，为空时表示使用阿里云弹性资源，Selector which must match a node’s labels for the pod to be scheduled on that node。可选项可联系集群管理员确定，目前可选项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">北京：</span><br><span class="line">       node: idc_physical</span><br><span class="line">       network &#x3D; internet ，联网节点</span><br><span class="line">义乌：</span><br><span class="line">       env &#x3D; idc_physical</span><br><span class="line">       network &#x3D; internet ，联网节点</span><br></pre></td></tr></table></figure>
+<h2 id="l" class="article-heading"><a href="#l" class="headerlink" title="-l"></a><code>-l</code><a class="article-anchor" href="#l" aria-hidden="true"></a></h2>Last module, from the pod <code>templetes</code> config section <code>module</code> option, if the module in the <code>-i</code> depend list, the pod in the module would exec at last no mater which pod its depend </li>
+</ul>
+<p>-l参数可以不设置，或者指定为<code>-i</code>参数中各配置文件的某个module，用于表示这个module内的job在执行完成其他module之后再执行。一般情况下我们会把生产结题报告的report module放到最后去执行，report module中的各job可以保持DAG关系。</p>
+<h1 id="example，使用示例" class="article-heading"><a href="#example，使用示例" class="headerlink" title="example，使用示例"></a>example，使用示例<a class="article-anchor" href="#example，使用示例" aria-hidden="true"></a></h1><p>以下为使用<code>gomonitor agsTask</code>的示例命令</p>
+<blockquote>
+<p> <code>gomonitor agsTask -i /abspath/all.txt -p PM-BJ181119-15-test -t FILTER </code></p>
+</blockquote>
+<p>执行以上命令后会返回project投递到argo的AgsID<br><code>AgsID: pm-bj181119-15-test3-filterxf7sg</code><br>可使用<code>ags get AgsID</code>命令查看workflow的状态，也可以通过<code>ags get AgsID --metrics</code>命令查看workflow的资源消耗情况</p>
+<blockquote>
+<p><code>ags get pm-bj181119-15-test3-filterxf7sg </code>，执行此命令后得到的信息如下所示：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Name:                pm-bj181119-15-test3-filterxf7sg</span><br><span class="line">Namespace:           zanyuan</span><br><span class="line">ServiceAccount:      default</span><br><span class="line">Status:              Succeeded</span><br><span class="line">Created:             Wed Jul 10 13:58:21 +0800 (1 day ago)</span><br><span class="line">Started:             Wed Jul 10 13:58:21 +0800 (1 day ago)</span><br><span class="line">Finished:            Wed Jul 10 15:03:34 +0800 (1 day ago)</span><br><span class="line">Duration:            1 hour 5 minutes</span><br><span class="line"></span><br><span class="line">STEP                                        PODNAME                                      DURATION  MESSAGE</span><br><span class="line"> ✔ pm-bj181119-15-test3-filterxf7sg                                                                </span><br><span class="line"> ├-✔ 1-0-cut-raw                                                                                   </span><br><span class="line"> | ├-·-✔ cut-raw-1-0-cut-raw-1              pm-bj181119-15-test3-filterxf7sg-3518185999  16s       </span><br><span class="line"> | | ├-✔ cut-raw-1-0-cut-raw-2              pm-bj181119-15-test3-filterxf7sg-3534963618  11s       </span><br><span class="line"> | | ├-✔ cut-raw-1-0-cut-raw-3              pm-bj181119-15-test3-filterxf7sg-3551741237  9s        </span><br><span class="line"> | | ├-✔ cut-raw-1-0-cut-raw-4              pm-bj181119-15-test3-filterxf7sg-3434297904  9s        </span><br><span class="line"> | | ├-✔ cut-raw-1-0-cut-raw-5              pm-bj181119-15-test3-filterxf7sg-3451075523  9s        </span><br><span class="line"> | | └-✔ cut-raw-1-0-cut-raw-6              pm-bj181119-15-test3-filterxf7sg-3467853142  24s       </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-3026636147  3s        </span><br><span class="line"> ├-✔ 2-0-filter                                                                                    </span><br><span class="line"> | ├-·-✔ filter-2-0-filter-1                pm-bj181119-15-test3-filterxf7sg-3847606146  15m       </span><br><span class="line"> | | ├-✔ filter-2-0-filter-2                pm-bj181119-15-test3-filterxf7sg-3830828527  12m       </span><br><span class="line"> | | ├-✔ filter-2-0-filter-3                pm-bj181119-15-test3-filterxf7sg-3814050908  12m       </span><br><span class="line"> | | ├-✔ filter-2-0-filter-4                pm-bj181119-15-test3-filterxf7sg-3797273289  13m       </span><br><span class="line"> | | ├-✔ filter-2-0-filter-5                pm-bj181119-15-test3-filterxf7sg-3780495670  14m       </span><br><span class="line"> | | └-✔ filter-2-0-filter-6                pm-bj181119-15-test3-filterxf7sg-3763718051  15m       </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-4225146849  12s       </span><br><span class="line"> ├-✔ 3-0-stat-dup-poly                                                                             </span><br><span class="line"> | ├-·-✔ stat-dup-poly-3-0-stat-dup-poly-1  pm-bj181119-15-test3-filterxf7sg-3233371467  3m        </span><br><span class="line"> | | ├-✔ stat-dup-poly-3-0-stat-dup-poly-2  pm-bj181119-15-test3-filterxf7sg-3250149086  2m        </span><br><span class="line"> | | ├-✔ stat-dup-poly-3-0-stat-dup-poly-3  pm-bj181119-15-test3-filterxf7sg-3266926705  2m        </span><br><span class="line"> | | ├-✔ stat-dup-poly-3-0-stat-dup-poly-4  pm-bj181119-15-test3-filterxf7sg-3283704324  3m        </span><br><span class="line"> | | ├-✔ stat-dup-poly-3-0-stat-dup-poly-5  pm-bj181119-15-test3-filterxf7sg-3300481943  3m        </span><br><span class="line"> | | └-✔ stat-dup-poly-3-0-stat-dup-poly-6  pm-bj181119-15-test3-filterxf7sg-3317259562  3m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-44753841    3s        </span><br><span class="line"> ├-✔ 3-1-nt-blastn                                                                                 </span><br><span class="line"> | ├-·-✔ nt-blastn-3-1-nt-blastn-1          pm-bj181119-15-test3-filterxf7sg-3658812387  29m       </span><br><span class="line"> | | ├-✔ nt-blastn-3-1-nt-blastn-2          pm-bj181119-15-test3-filterxf7sg-3675590006  27m       </span><br><span class="line"> | | ├-✔ nt-blastn-3-1-nt-blastn-3          pm-bj181119-15-test3-filterxf7sg-3692367625  33m       </span><br><span class="line"> | | ├-✔ nt-blastn-3-1-nt-blastn-4          pm-bj181119-15-test3-filterxf7sg-3709145244  30m       </span><br><span class="line"> | | ├-✔ nt-blastn-3-1-nt-blastn-5          pm-bj181119-15-test3-filterxf7sg-3725922863  28m       </span><br><span class="line"> | | └-✔ nt-blastn-3-1-nt-blastn-6          pm-bj181119-15-test3-filterxf7sg-3742700482  31m       </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-3715854636  9s        </span><br><span class="line"> ├-✔ 4-0-stat                                                                                      </span><br><span class="line"> | ├---✔ stat-4-0-stat-1                    pm-bj181119-15-test3-filterxf7sg-3029662790  14s       </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-1289608023  9s        </span><br><span class="line"> ├-✔ 5-0-md5                                                                                       </span><br><span class="line"> | ├---✔ md5-5-0-md5-1                      pm-bj181119-15-test3-filterxf7sg-4151038802  3m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-2395077828  8s        </span><br><span class="line"> ├-✔ 6-0-feedback                                                                                  </span><br><span class="line"> | ├---✔ feedback-6-0-feedback-1            pm-bj181119-15-test3-filterxf7sg-2544232295  1m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-1221889880  10s       </span><br><span class="line"> ├-✔ 3-2-nt-stat                                                                                   </span><br><span class="line"> | ├-·-✔ nt-stat-3-2-nt-stat-1              pm-bj181119-15-test3-filterxf7sg-2204345279  11m       </span><br><span class="line"> | | ├-✔ nt-stat-3-2-nt-stat-2              pm-bj181119-15-test3-filterxf7sg-2221122898  11m       </span><br><span class="line"> | | ├-✔ nt-stat-3-2-nt-stat-3              pm-bj181119-15-test3-filterxf7sg-2237900517  11m       </span><br><span class="line"> | | ├-✔ nt-stat-3-2-nt-stat-4              pm-bj181119-15-test3-filterxf7sg-2120457184  11m       </span><br><span class="line"> | | ├-✔ nt-stat-3-2-nt-stat-5              pm-bj181119-15-test3-filterxf7sg-2137234803  11m       </span><br><span class="line"> | | └-✔ nt-stat-3-2-nt-stat-6              pm-bj181119-15-test3-filterxf7sg-2154012422  11m       </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-3533206747  10s       </span><br><span class="line"> ├-✔ 6-1-nt-feedback                                                                               </span><br><span class="line"> | ├---✔ nt-feedback-6-1-nt-feedback-1      pm-bj181119-15-test3-filterxf7sg-1992993100  1m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-3978405544  3s        </span><br><span class="line"> ├-✔ 7-0-filter-result                                                                             </span><br><span class="line"> | ├---✔ filter-result-7-0-filter-result-1  pm-bj181119-15-test3-filterxf7sg-2721433578  1m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-3170040650  9s        </span><br><span class="line"> ├-✔ 8-1-html2pdf                                                                                  </span><br><span class="line"> | ├---✔ html2pdf-8-1-html2pdf-1            pm-bj181119-15-test3-filterxf7sg-2744460583  8s        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-2346318697  3s        </span><br><span class="line"> ├-✔ 8-0-md5-all                                                                                   </span><br><span class="line"> | ├---✔ md5-all-8-0-md5-all-1              pm-bj181119-15-test3-filterxf7sg-428320106   1m        </span><br><span class="line"> | └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-1719563473  3s        </span><br><span class="line"> └-✔ 8-2-send-report                                                                               </span><br><span class="line">   ├---✔ send-report-8-2-send-report-1      pm-bj181119-15-test3-filterxf7sg-1424952785  1m        </span><br><span class="line">   └---✔ sign                               pm-bj181119-15-test3-filterxf7sg-2624527654  2s</span><br></pre></td></tr></table></figure>
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2021-03-11T07:25:35.013Z" itemprop="dateModified">Last updated: 2021-03-11</time>
+                <a href="taskmonitor.html" class="article-footer-prev" title="taskmonitor"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://seqyuan.github.io/gomonitor/agsTask.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-text">功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Arguments"><span class="toc-text">Arguments</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Arguments%EF%BC%8Cgomonitor-agsTask%E5%90%84%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-text">Arguments，gomonitor agsTask各参数说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#i"><span class="toc-text">-i</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pod-config-example"><span class="toc-text">pod config example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#l"><span class="toc-text">-l</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#example%EF%BC%8C%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">example，使用示例</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">overview</strong><a href="home.html" class="sidebar-link">home</a><a href="stat.html" class="sidebar-link">stat</a><a href="retry.html" class="sidebar-link">retry</a><strong class="sidebar-title">pod</strong><a href="psub.html" class="sidebar-link">psub</a><a href="submit.html" class="sidebar-link">submit</a><strong class="sidebar-title">workflow</strong><a href="taskmonitor.html" class="sidebar-link">taskmonitor</a><a href="agsTask.html" class="sidebar-link current">agsTask</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2021 <a href="https://github.com/hexojs/hexo/graphs/contributors" rel="external nofollow noreferrer" target="_blank">ahworld</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://www.netlify.com/" rel="external nofollow noreferrer" class="footer-link" target="_blank"><img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" style="margin-bottom:-14px"/></a>
+      <a href="https://twitter.com/hexojs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/seqyuan/site" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/gomonitor/" class="mobile-nav-link">gomonitor</a><a href="/trackC/" class="mobile-nav-link">trackC</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/about/" class="mobile-nav-link">About</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/seqyuan/site" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">overview</strong><a href="home.html" class="mobile-nav-link">home</a><a href="stat.html" class="mobile-nav-link">stat</a><a href="retry.html" class="mobile-nav-link">retry</a><strong class="mobile-nav-title">pod</strong><a href="psub.html" class="mobile-nav-link">psub</a><a href="submit.html" class="mobile-nav-link">submit</a><strong class="mobile-nav-title">workflow</strong><a href="taskmonitor.html" class="mobile-nav-link">taskmonitor</a><a href="agsTask.html" class="mobile-nav-link current">agsTask</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="gomonitor/agsTask.html">
+      
+        <option value="en" selected>English</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- Cookie -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<!-- build:js build/js/main.js -->
+
+<script src="/js/lang_select.js"></script>
+
+
+<script src="/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>

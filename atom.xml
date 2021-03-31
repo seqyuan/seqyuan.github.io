@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>seqyuan</title>
+  
+  <subtitle>seqyuan organization</subtitle>
+  <link href="https://seqyuan.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://seqyuan.github.io/"/>
+  <updated>2021-03-12T01:24:00.199Z</updated>
+  <id>https://seqyuan.github.io/</id>
+  
+  <author>
+    <name>ahworld</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>seqyuan 2.0 released</title>
+    <link href="https://seqyuan.github.io/news/2021/03/11/seqyuan-1-0-0-released/"/>
+    <id>https://seqyuan.github.io/news/2021/03/11/seqyuan-1-0-0-released/</id>
+    <published>2021-03-11T00:00:00.000Z</published>
+    <updated>2021-03-12T01:24:00.199Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="seqyuan-2-0"><a href="#seqyuan-2-0" class="headerlink" title="seqyuan 2.0"></a>seqyuan 2.0</h2><p>博客文章作为网站的一部分，朝<code>生信分析+科普</code>综合解决方案方向发展</p><h3 id="New-features"><a href="#New-features" class="headerlink" title="New features"></a>New features</h3><ul><li>plugins: 小工具扩展集合</li><li>gomonitor: 全平台场景流程调度工具说明-初版</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;seqyuan-2-0&quot;&gt;&lt;a href=&quot;#seqyuan-2-0&quot; class=&quot;headerlink&quot; title=&quot;seqyuan 2.0&quot;&gt;&lt;/a&gt;seqyuan 2.0&lt;/h2&gt;&lt;p&gt;博客文章作为网站的一部分，朝&lt;code&gt;生信分析+科普&lt;/code&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>seqyuan 1.0 Released</title>
+    <link href="https://seqyuan.github.io/news/2017/03/13/seqyuan-1-released/"/>
+    <id>https://seqyuan.github.io/news/2017/03/13/seqyuan-1-released/</id>
+    <published>2017-03-13T00:00:00.000Z</published>
+    <updated>2021-03-12T01:09:10.391Z</updated>
+    
+    <content type="html"><![CDATA[<p>上线了seqyuan 第一版，以pelican为静态网页生成引擎，以博客文章为主</p><img src="/news/2017/03/13/seqyuan-1-released/f1.png" class="">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上线了seqyuan 第一版，以pelican为静态网页生成引擎，以博客文章为主&lt;/p&gt;
+&lt;img src=&quot;/news/2017/03/13/seqyuan-1-released/f1.png&quot; class=&quot;&quot;&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

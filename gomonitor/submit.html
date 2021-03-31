@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>seqyuan</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://seqyuan.github.io/gomonitor/submit.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://seqyuan.github.io/gomonitor/submit">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://seqyuan.github.io/zh-cn/gomonitor/submit">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  
+<link rel="stylesheet" href="/css/navy.css">
+
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-lato@0.0.75/index.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="seqyuan" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="功能 submit pod as workflow to argo&#x2F;kubernetes   投递单个job到argo&#x2F;k8s参数Arguments:  -p  --podConfig    pod config:  -t  --submit_type  Operation mode for submitting job		       argo  submit job as workflow t">
+<meta property="og:type" content="website">
+<meta property="og:title" content="seqyuan">
+<meta property="og:url" content="https://seqyuan.github.io/gomonitor/submit">
+<meta property="og:site_name" content="seqyuan">
+<meta property="og:description" content="功能 submit pod as workflow to argo&#x2F;kubernetes   投递单个job到argo&#x2F;k8s参数Arguments:  -p  --podConfig    pod config:  -t  --submit_type  Operation mode for submitting job		       argo  submit job as workflow t">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-11T07:25:35.016Z">
+<meta property="article:modified_time" content="2021-03-11T07:25:35.016Z">
+<meta property="article:author" content="ahworld">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6482217598104186",
+          enable_page_level_ads: true
+     });
+  </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/gomonitor/" class="main-nav-link">gomonitor</a><a href="/trackC/" class="main-nav-link">trackC</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/about/" class="main-nav-link">About</a>
+      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/seqyuan/site" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="gomonitor/submit.html">
+        
+          <option value="en" selected>English</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/hexojs/site/edit/master/source/gomonitor/submit.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="功能" class="article-heading"><a href="#功能" class="headerlink" title="功能"></a>功能<a class="article-anchor" href="#功能" aria-hidden="true"></a></h1><blockquote>
+<p>submit pod as workflow to argo/kubernetes</p>
+</blockquote>
+<ul>
+<li>投递单个job到argo/k8s<h1 id="参数" class="article-heading"><a href="#参数" class="headerlink" title="参数"></a>参数<a class="article-anchor" href="#参数" aria-hidden="true"></a></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Arguments:</span><br><span class="line"></span><br><span class="line">  -p  --podConfig    pod config:</span><br><span class="line">  -t  --submit_type  Operation mode for submitting job</span><br><span class="line">		       argo  submit job as workflow type to argo.</span><br><span class="line">		       pod   submit job as pod type to kubectl.</span><br><span class="line">		       job   submit job as job type to kubectl</span><br><span class="line">		       . Default: argo</span><br><span class="line">  -h  --help         Print help information</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="p" class="article-heading"><a href="#p" class="headerlink" title="-p"></a><code>-p</code><a class="article-anchor" href="#p" aria-hidden="true"></a></h2>此项为投递单个pod的config到argo/k8s，config内各项的释义详见<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitlab.com/seqyuan/gomonitor/wikis/agsTask" title="podConfig">config</a>，示例<code>bcl2fq.ini</code>文件内容如下：<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[templetes]</span><br><span class="line">pod_name = bcl2fq-all</span><br><span class="line">module = qc</span><br><span class="line">template = bcl2fq</span><br><span class="line">imagePullSecrets = registry-read-only-key-yw</span><br><span class="line"></span><br><span class="line">[Tolerations.network]</span><br><span class="line">Operator = Equal</span><br><span class="line">Value = internet</span><br><span class="line">Effect = NoSchedule</span><br><span class="line"></span><br><span class="line">[NodeSelector]</span><br><span class="line">env = idc_physical</span><br><span class="line"></span><br><span class="line">[requests]</span><br><span class="line">memory = 1</span><br><span class="line">cpu = 1</span><br><span class="line"></span><br><span class="line">[limits]</span><br><span class="line">memory = 1</span><br><span class="line">cpu = 1</span><br><span class="line"></span><br><span class="line">[container]</span><br><span class="line">image = registry-vpc.cn-hangzhou.aliyuncs.com/annoroad/annogene-base:v0.1</span><br><span class="line">args = /home/zanyuan/bin/example/submit_test/bcl2fq.sh</span><br><span class="line">lines = </span><br><span class="line">[volumeMounts]</span><br><span class="line">home = /cluster_home|store|/home</span><br></pre></td></tr></table></figure>
+<h2 id="t" class="article-heading"><a href="#t" class="headerlink" title="-t"></a><code>-t</code><a class="article-anchor" href="#t" aria-hidden="true"></a></h2><code>-t</code>有3种可选：argo、job、pod，默认为argo</li>
+<li> argo：会以workflow的形式投递单个任务到argo，适合用ags get agsID –metrics查看任务消耗的memory/cpu</li>
+<li> pod：一般用于建立持久的长时运行服务，例如gitlab-runner service, Mysql </li>
+<li> job：多用于执行一次性任务、批处理工作等，执行完成后便会停止（status.phase变为Succeeded）</li>
+</ul>
+<h1 id="example" class="article-heading"><a href="#example" class="headerlink" title="example"></a>example<a class="article-anchor" href="#example" aria-hidden="true"></a></h1><p>如果我们要投递<code>bcl2fq.sh</code>这个脚本，脚本的内容如下，需要前述的bcl2fq.ini配置信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo 32</span><br><span class="line">sleep 6s</span><br><span class="line">echo 34</span><br><span class="line">sleep 7s</span><br><span class="line">echo 45</span><br><span class="line">sleep 5s</span><br></pre></td></tr></table></figure>
+<p>you can invoke this from the command line as follows:</p>
+<blockquote>
+<p> 执行此命令<code>gomonitor submit -p bcl2fq.ini</code>会返回agsID</p>
+</blockquote>
+<p>bcl2fq-bcl2fq-all-tt7xn</p>
+<blockquote>
+<p>使用ags get agsID命令查看任务运行情况；如果指定了-t 参数为pod，可以用<code>kubectl get pod podID</code>命令查询任务的状态；如果指定了-t 参数为job，可以用<code>kubectl get job podID</code>命令查询任务的状态</p>
+</blockquote>
+<p><code>ags get bcl2fq-bcl2fq-all-tt7xn</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Name:                bcl2fq-bcl2fq-all-tt7xn</span><br><span class="line">Namespace:           zanyuan</span><br><span class="line">ServiceAccount:      default</span><br><span class="line">Status:              Succeeded</span><br><span class="line">Created:             Thu Jul 11 17:25:30 +0800 (45 seconds ago)</span><br><span class="line">Started:             Thu Jul 11 17:25:30 +0800 (45 seconds ago)</span><br><span class="line">Finished:            Thu Jul 11 17:25:52 +0800 (23 seconds ago)</span><br><span class="line">Duration:            22 seconds</span><br><span class="line"></span><br><span class="line">STEP                        PODNAME                  DURATION  MESSAGE</span><br><span class="line"> ✔ bcl2fq-bcl2fq-all-tt7xn  bcl2fq-bcl2fq-all-tt7xn  20s            </span><br></pre></td></tr></table></figure>
+<p><strong>标准输出流</strong>和<strong>标准错误</strong>流会类似于qsub-sge系统的job分别输出到<code>job_sh.o.+podID</code>及<code>job_sh.e.+podID</code></p>
+<p>例如示例以上的标准输出流和标准错误流会分别定向到：</p>
+<ul>
+<li>./bcl2fq.sh.o.bcl2fq-bcl2fq-all-tt7xn</li>
+<li>./bcl2fq.sh.e.bcl2fq-bcl2fq-all-tt7xn</li>
+</ul>
+<h2 id="高级的使用示例，使用containersection里的linesoption" class="article-heading"><a href="#高级的使用示例，使用containersection里的linesoption" class="headerlink" title="高级的使用示例，使用containersection里的linesoption"></a>高级的使用示例，使用<code>container</code>section里的<code>lines</code>option<a class="article-anchor" href="#高级的使用示例，使用containersection里的linesoption" aria-hidden="true"></a></h2><p>例如<code>bcl2fq.sh</code>这个脚本里的内容如下：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo 32</span><br><span class="line">sleep 6s</span><br><span class="line">echo 34</span><br><span class="line">sleep 7s</span><br><span class="line">echo 45</span><br><span class="line">sleep 5s</span><br></pre></td></tr></table></figure>
+<p>如果我们想让其每2行作为一个单位，并行的去执行，任务config <code>bcl2fq.ini</code>可以按如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[templetes]</span><br><span class="line">pod_name &#x3D; bcl2fq-all</span><br><span class="line">module &#x3D; qc</span><br><span class="line">template &#x3D; bcl2fq</span><br><span class="line">imagePullSecrets &#x3D; registry-read-only-key-yw</span><br><span class="line"></span><br><span class="line">[NodeSelector]</span><br><span class="line">env &#x3D; idc_physical</span><br><span class="line"></span><br><span class="line">[requests]</span><br><span class="line">memory &#x3D; 1</span><br><span class="line">cpu &#x3D; 1</span><br><span class="line"></span><br><span class="line">[limits]</span><br><span class="line">memory &#x3D; 1</span><br><span class="line">cpu &#x3D; 1</span><br><span class="line"></span><br><span class="line">[container]</span><br><span class="line">image &#x3D; registry-vpc.cn-hangzhou.aliyuncs.com&#x2F;annoroad&#x2F;annogene-base:v0.1</span><br><span class="line">args &#x3D; &#x2F;home&#x2F;zanyuan&#x2F;bin&#x2F;example&#x2F;submit_test&#x2F;bcl2fq.sh</span><br><span class="line">lines &#x3D; 2</span><br><span class="line">[volumeMounts]</span><br><span class="line">home &#x3D; &#x2F;cluster_home|store|&#x2F;home</span><br></pre></td></tr></table></figure>
+<p>与前面<code>bcl2fq.ini</code>配置的唯一区别是设置了<code>lines = 2</code>，表示的意思是<code>bcl2fq.sh</code>这个脚本中每2行一个单位并行的去执行；如果想bcl2fq.sh作为一个整体串行的去执行，lines的value设置为空就可以。</p>
+<blockquote>
+<p>我们可以看下并行执行的效果<code>gomonitor submit -p bcl2fq.ini</code>，得到以下agsID</p>
+</blockquote>
+<p>bcl2fq-bcl2fq-all-8xz6h</p>
+<p>查看任务运行情况，执行此命令<code>ags get bcl2fq-bcl2fq-all-8xz6h</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">STEP                        PODNAME                             DURATION  MESSAGE</span><br><span class="line"> ● bcl2fq-bcl2fq-all-8xz6h                                                </span><br><span class="line"> └-·-● bcl2fq-bcl2fq-all-1  bcl2fq-bcl2fq-all-8xz6h-1539799166  10s       </span><br><span class="line">   ├-● bcl2fq-bcl2fq-all-2  bcl2fq-bcl2fq-all-8xz6h-1523021547  10s       </span><br><span class="line">   └-✔ bcl2fq-bcl2fq-all-3  bcl2fq-bcl2fq-all-8xz6h-1506243928  6s      </span><br></pre></td></tr></table></figure>
+<p>我们可以看到有3个子pod被并行的执行了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Name:                bcl2fq-bcl2fq-all-8xz6h</span><br><span class="line">Namespace:           zanyuan</span><br><span class="line">ServiceAccount:      default</span><br><span class="line">Status:              Succeeded</span><br><span class="line">Created:             Thu Jul 11 18:14:13 +0800 (16 seconds ago)</span><br><span class="line">Started:             Thu Jul 11 18:14:13 +0800 (16 seconds ago)</span><br><span class="line">Finished:            Thu Jul 11 18:14:28 +0800 (1 second ago)</span><br><span class="line">Duration:            15 seconds</span><br><span class="line"></span><br><span class="line">STEP                        PODNAME                             DURATION  MESSAGE</span><br><span class="line"> ✔ bcl2fq-bcl2fq-all-8xz6h                                                </span><br><span class="line"> ├-·-✔ bcl2fq-bcl2fq-all-1  bcl2fq-bcl2fq-all-8xz6h-1539799166  8s        </span><br><span class="line"> | ├-✔ bcl2fq-bcl2fq-all-2  bcl2fq-bcl2fq-all-8xz6h-1523021547  9s        </span><br><span class="line"> | └-✔ bcl2fq-bcl2fq-all-3  bcl2fq-bcl2fq-all-8xz6h-1506243928  6s        </span><br><span class="line"> └---✔ sign                 bcl2fq-bcl2fq-all-8xz6h-2619111197  2s </span><br></pre></td></tr></table></figure>
+<p>执行之后的目录结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── bcl2fq-all</span><br><span class="line">│   ├── bcl2fq-all_1.sh</span><br><span class="line">│   ├── bcl2fq-all_1.sh.e.bcl2fq-bcl2fq-all-khtpv-2956236467</span><br><span class="line">│   ├── bcl2fq-all_1.sh.o.bcl2fq-bcl2fq-all-khtpv-2956236467</span><br><span class="line">│   ├── bcl2fq-all_1.sh.sign</span><br><span class="line">│   ├── bcl2fq-all_2.sh</span><br><span class="line">│   ├── bcl2fq-all_2.sh.e.bcl2fq-bcl2fq-all-khtpv-2973014086</span><br><span class="line">│   ├── bcl2fq-all_2.sh.o.bcl2fq-bcl2fq-all-khtpv-2973014086</span><br><span class="line">│   ├── bcl2fq-all_2.sh.sign</span><br><span class="line">│   ├── bcl2fq-all_3.sh</span><br><span class="line">│   ├── bcl2fq-all_3.sh.e.bcl2fq-bcl2fq-all-khtpv-2989791705</span><br><span class="line">│   ├── bcl2fq-all_3.sh.o.bcl2fq-bcl2fq-all-khtpv-2989791705</span><br><span class="line">│   └── bcl2fq-all_3.sh.sign</span><br><span class="line">├── bcl2fq.ini</span><br><span class="line">├── bcl2fq.sh</span><br><span class="line">└── bcl2fq.sh.sign</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> 如果设置了lines，执行了投递操作</p>
+</blockquote>
+<ul>
+<li> 会在<strong>container.args</strong>的value脚本所在目录建立一个目录，这个新建的目录以<strong>templetes.pod_name</strong>命名</li>
+<li> <strong>container.args</strong>里的内容会按照lines的设置按行次序分割，并把分割后的内容输出到新建的目录里，命名为<strong>templetes.pod_name</strong>+<strong>_</strong>+<strong>分割的第几个单元(数字)</strong>+<strong>.sh</strong></li>
+<li> <strong>标准输出流</strong>和<strong>标准错误</strong>会分别输出到对应子shell的<code>job_N.sh.o.+podID</code>、<code>job_N.sh.e.+podID</code>里</li>
+<li> 每个子shell成功完成之后还会有一个<code>job_sh.sign</code>这个<code>job_sh.sign</code>里的内容为<code>**~/gomonitor.project.conf**</code>里<strong>base.defaultFinishMark</strong>对应value</li>
+<li> 会伴随一个<code>container.args+.sign</code>的文件出现，文件里的内容为<code>**~/gomonitor.project.conf**</code>里<strong>base.defaultFinishMark</strong>对应value，示例如下：</li>
+</ul>
+<p><code>cat bcl2fq.ini.sign</code></p>
+<p>Still_waters_run_deep</p>
+<blockquote>
+<p> 目前container.lines参数只对于<code>**-t**</code>选择为<code>argo</code>适用，对于<code>**-t**</code>选择为<code>pod</code>或者<code>job</code>无效</p>
+</blockquote>
+<h2 id="submit-a-pod-to-kubernetes" class="article-heading"><a href="#submit-a-pod-to-kubernetes" class="headerlink" title="submit a pod to kubernetes"></a>submit a pod to kubernetes<a class="article-anchor" href="#submit-a-pod-to-kubernetes" aria-hidden="true"></a></h2><p><code>cat k8sPodConf.ini</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[templetes]</span><br><span class="line">pod_name = test</span><br><span class="line">imagePullSecrets = registry-read-only-key-yw</span><br><span class="line"></span><br><span class="line">[NodeSelector]</span><br><span class="line">env = idc_physical</span><br><span class="line"></span><br><span class="line">[requests]</span><br><span class="line">memory = 1</span><br><span class="line">cpu = 1</span><br><span class="line"></span><br><span class="line">[limits]</span><br><span class="line">memory = 1</span><br><span class="line">cpu = 1</span><br><span class="line"></span><br><span class="line">[container]</span><br><span class="line">image = registry-vpc.cn-hangzhou.aliyuncs.com/annoroad/annogene-base:v0.1</span><br><span class="line">args = /home/zanyuan/bin/example/taskmodeTest10/a1-base.sh</span><br><span class="line"></span><br><span class="line">[volumeMounts]</span><br><span class="line">home = /cluster_home|store|/home</span><br></pre></td></tr></table></figure>
+<p><code>gomonitor submit -p k8sPodConf.ini -t pod</code></p>
+<p>test-zxpm9</p>
+<p><code>kubectl get pod test-zxpm9</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NAME         READY     STATUS      RESTARTS   AGE</span><br><span class="line">test-zxpm9   0&#x2F;1       Completed   0          12s</span><br></pre></td></tr></table></figure>
+<h2 id="submit-a-job-to-kubernetes" class="article-heading"><a href="#submit-a-job-to-kubernetes" class="headerlink" title="submit a job to kubernetes"></a>submit a job to kubernetes<a class="article-anchor" href="#submit-a-job-to-kubernetes" aria-hidden="true"></a></h2><p><code>gomonitor submit -p k8sPodConf.ini -t job</code></p>
+<p>test-nxm9b</p>
+<p><code>kubectl get job test-nxm9b</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NAME         DESIRED   SUCCESSFUL   AGE</span><br><span class="line">test-nxm9b   1         1            11s</span><br></pre></td></tr></table></figure>
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2021-03-11T07:25:35.016Z" itemprop="dateModified">Last updated: 2021-03-11</time>
+                <a href="psub.html" class="article-footer-prev" title="psub"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="taskmonitor.html" class="article-footer-next" title="taskmonitor"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://seqyuan.github.io/gomonitor/submit.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-text">功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-text">参数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#p"><span class="toc-text">-p</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#t"><span class="toc-text">-t</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#example"><span class="toc-text">example</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B%EF%BC%8C%E4%BD%BF%E7%94%A8containersection%E9%87%8C%E7%9A%84linesoption"><span class="toc-text">高级的使用示例，使用containersection里的linesoption</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#submit-a-pod-to-kubernetes"><span class="toc-text">submit a pod to kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#submit-a-job-to-kubernetes"><span class="toc-text">submit a job to kubernetes</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">overview</strong><a href="home.html" class="sidebar-link">home</a><a href="stat.html" class="sidebar-link">stat</a><a href="retry.html" class="sidebar-link">retry</a><strong class="sidebar-title">pod</strong><a href="psub.html" class="sidebar-link">psub</a><a href="submit.html" class="sidebar-link current">submit</a><strong class="sidebar-title">workflow</strong><a href="taskmonitor.html" class="sidebar-link">taskmonitor</a><a href="agsTask.html" class="sidebar-link">agsTask</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2021 <a href="https://github.com/hexojs/hexo/graphs/contributors" rel="external nofollow noreferrer" target="_blank">ahworld</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://www.netlify.com/" rel="external nofollow noreferrer" class="footer-link" target="_blank"><img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" style="margin-bottom:-14px"/></a>
+      <a href="https://twitter.com/hexojs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/seqyuan/site" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/gomonitor/" class="mobile-nav-link">gomonitor</a><a href="/trackC/" class="mobile-nav-link">trackC</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/about/" class="mobile-nav-link">About</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/seqyuan/site" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">overview</strong><a href="home.html" class="mobile-nav-link">home</a><a href="stat.html" class="mobile-nav-link">stat</a><a href="retry.html" class="mobile-nav-link">retry</a><strong class="mobile-nav-title">pod</strong><a href="psub.html" class="mobile-nav-link">psub</a><a href="submit.html" class="mobile-nav-link current">submit</a><strong class="mobile-nav-title">workflow</strong><a href="taskmonitor.html" class="mobile-nav-link">taskmonitor</a><a href="agsTask.html" class="mobile-nav-link">agsTask</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="gomonitor/submit.html">
+      
+        <option value="en" selected>English</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- Cookie -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<!-- build:js build/js/main.js -->
+
+<script src="/js/lang_select.js"></script>
+
+
+<script src="/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>
